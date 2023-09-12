@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.9rem;
+    font-weight: 600;
+    padding: 0.75rem 3rem;
+}
+
+.headerLogo {
+    text-transform: uppercase;
+    text-decoration: line-through 0.4rem;
+}
+
+.settings {
+    stroke: none;
+    cursor: pointer;
+    transition: fill-opacity .3s;
+}
+
+.settings:hover {
+    fill-opacity: 0.7;
+}

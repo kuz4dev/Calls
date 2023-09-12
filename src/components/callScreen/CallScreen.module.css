@@ -1,0 +1,16 @@
+.callScreen {
+    display: flex;
+}
+
+.users {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    margin-top: 3.25rem;
+}
+
+.width {
+    max-width: 78.8rem;
+}

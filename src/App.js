@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { Navigate, Route, Routes } from 'react-router-dom';
+import styles from './App.module.css';
+import Header from './components/header/Header';
+import StartScreen from './components/startScreen/StartScreen';
+import CallScreen from './components/callScreen/CallScreen';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className={styles.App}>
+      <Header />
+
+      <Routes>
+
+        <Route path={'/'} element={<StartScreen />} />
+        <Route path={'/room/:id'} element={<CallScreen />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+
+      </Routes>
+
+    </div >
   );
 }
 

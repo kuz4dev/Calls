@@ -1,0 +1,29 @@
+.message {
+    position: relative;
+}
+
+.svg {
+    stroke: none;
+    transition: fill-opacity .3s;
+    cursor: pointer;
+}
+
+.svg:hover {
+    fill-opacity: 0.7;
+}
+
+.unreadMessages {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 800;
+    font-size: 0.75rem;
+    border-radius: 0.6rem;
+    min-width: 2rem;
+    height: 1rem;
+    padding: 0.1rem;
+    background-color: #FF0041;
+    position: absolute;
+    bottom: 1.4rem;
+    left: 2.8rem;
+}

@@ -1,0 +1,15 @@
+.animalPhoto {
+    position: relative;
+    height: 23.5rem;
+    width: 23.5rem;
+}
+
+.slogan {
+    position: absolute;
+    font-size: 3.2rem;
+    font-weight: 900;
+    text-align: right;
+    line-height: 94%;
+    bottom: 1.75rem;
+    right: 1rem;
+}

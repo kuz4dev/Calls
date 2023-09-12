@@ -1,0 +1,42 @@
+.footer {
+    margin: 1.75rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    gap: 3.75rem;
+}
+
+.svg {
+    stroke: none;
+    transition: fill-opacity .3s;
+    cursor: pointer;
+}
+
+.svg:hover {
+    fill-opacity: 0.7;
+}
+
+.close {
+    fill: #ff0041;
+}
+
+.inactive {
+    position: relative;
+    /* min-width: 3rem; */
+}
+
+.inactive::after {
+    position: absolute;
+    content: ' ';
+    top: 50%;
+    width: 110%;
+    height: 0.25rem;
+    border-radius: 0.5rem;
+    background-color: #ff0041;
+}
+
+.inactive::after {
+    transform: rotate(-45deg) translateY(-50%);
+    left: 0px;
+}
